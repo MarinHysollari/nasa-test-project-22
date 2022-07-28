@@ -14,8 +14,7 @@
   "author": "",
   "license": "ISC",
   "jest": {
-    "testEnvironment": "node",
-    "testTimeout": 100000
+    "testEnvironment": "node"
   },
   "dependencies": {
     "axios": "^0.27.2",

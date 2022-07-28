@@ -12,6 +12,7 @@ mongoose.connection.on('error', (error) => {
 })
 
 async function mongoConnect() {
+  console.log('MONGO_URL => ', MONGO_URL)
   await mongoose.connect(MONGO_URL)
 }
 
