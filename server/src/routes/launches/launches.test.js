@@ -3,8 +3,6 @@ const request  =require('supertest')
 const { mongoConnect, mongoDisconnect } = require('../../services/mongo')
 const { loadPlanetsData } = require("../../models/planets.model");
 
-jest.setTimeout(60000);
-
 describe('Launches API', () => {
   beforeAll(async () => {
     await mongoConnect()
