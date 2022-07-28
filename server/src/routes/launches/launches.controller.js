@@ -28,7 +28,7 @@ async function httpAddNewLaunch(req, res) {
   }
 
   let launch = await scheduleNewLaunch(launchBody)
-  console.log(launch)
+  console.log(launch, launchBody)
   return res.status(201).json(launch)
 }
 
