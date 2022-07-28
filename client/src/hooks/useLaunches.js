@@ -15,8 +15,11 @@ function useLaunches(onSuccessSound, onAbortSound, onFailureSound) {
     saveLaunches(fetchedLaunches);
   }, []);
 
-  useEffect(async () => {
-    await getLaunches();
+  useEffect(() => {
+    async function fetchData() {
+      await getLaunches();
+    }
+    fetchData().then();
   }, [getLaunches]);
 
   const submitLaunch = useCallback(async (e) => {
